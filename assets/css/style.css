@@ -140,9 +140,13 @@ header ul li a:hover{
   Header styling ends here
 =================================*/  
 
+
 /*=================================
   main styling starts here
 =================================*/
+/*=================================
+  Banner styling starts here
+=================================*/  
 
 .banner{
   position: relative;
@@ -188,6 +192,14 @@ header ul li a:hover{
 .button2:hover{
   background-color: #349eeb;
 }
+/*=================================
+  Banner styling ends here
+=================================*/  
+/*=================================
+  Section what we do styling starts here
+=================================*/  
+
+
 .what-we-do{
   position: relative;
   float: left;
@@ -253,6 +265,14 @@ header ul li a:hover{
   margin-top: 10%;
   color: #778783;
 }
+/*=================================
+  Section what we do styling ends here
+=================================*/  
+/*=================================
+ Section services styling starts here
+=================================*/  
+
+
 .services{
  min-height: 646px;
  width: 100%;
@@ -292,6 +312,14 @@ header ul li a:hover{
   padding: 5px;
 
 }
+/*=================================
+ Section services styling ends here
+=================================*/  
+/*=================================
+ Section tab styling starts here
+=================================*/  
+
+
 .tab-section{
   min-height: 916px;
   width: 100%;
@@ -327,6 +355,13 @@ header ul li a:hover{
   display: block;
   color: #778783;
 }
+/*=================================
+  Section tab styling ends here
+=================================*/  
+/*=================================
+  Section social styling starts here
+=================================*/  
+
 
 .social{
   min-height: 236px;
@@ -393,6 +428,10 @@ header ul li a:hover{
   -webkit-transition: transform 0.5 ease-in-out;
 }
 /*=================================
+ Section social styling ends here
+=================================*/  
+
+/*=================================
   main styling ends here
 =================================*/
 
@@ -405,40 +444,11 @@ footer{
   min-height: 80px;
   background-color: black;
   color:#747480;
-  ;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner h2{
-  position: absolute;
-  top: 35%;
-  left: 0;
-  font-size: 40px;
-  color:#FFFF;
-}
-.banner span{
-  position: absolute;
-  top: 48%;
-  left: 0;
-  font-size: 18px;
-  color: #349eeb;
-}
-.button1{
-  position: absolute;
-  display: inline-block;
-  height: 37px;
-  top: 58%;
-  left: 0;;
-}
-.button2{
-  position: absolute;
-  display: inline-block;
-  top: 58%;
-  left: 20%;
-  height: 37px
-}
 
 
 
@@ -463,5 +473,34 @@ header ul{
 .banner h2{
   color: #349eeb;
 }
+.banner h2{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  font-size: 40px;
+  color:#349eeb;
+}
+.banner span{
+  position: absolute;
+  top: 48%;
+  left: 0;
+  font-size: 18px;
+  color: #349eeb;
+}
+.button1{
+  position: absolute;
+  display: inline-block;
+  height: 37px;
+  top: 58%;
+  left: 0;;
+}
+.button2{
+  position: absolute;
+  display: inline-block;
+  top: 58%;
+  left: 20%;
+  height: 37px
+}
+
 
 }  
