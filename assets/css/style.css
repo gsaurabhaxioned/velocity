@@ -1,0 +1,467 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  overflow-x:hidden ;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1515px;
+  width: 49%; 
+  margin: 0 auto;
+}
+/*=================================
+  Header styling starts here
+=================================*/
+header{
+  width: 100%;
+  min-height: 50px;
+  background-color: white;
+  box-sizing: border-box;
+  float: left;
+  padding-top: 15px;
+}
+header h1{
+  width: 50%;
+  font-size: 25px;
+  color: #349eeb;
+  float: left;
+}
+header ul{
+  width: 17%;
+  float: right;
+  display: inline;
+}
+header ul li{
+  width: 50%;
+  float: left;
+}
+header ul li a{
+  color:#747480;
+}
+header ul li a:hover{
+  color: #349eeb;
+}
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+
+.banner{
+  position: relative;
+  min-height: 467px;
+  float: left;
+  
+}
+.banner figure{
+  height: 467px;
+  width: 100%;
+}
+.banner h2{
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  font-size: 40px;
+  color:#FFFF;
+}
+.banner span{
+  position: absolute;
+  top: 48%;
+  left: 39%;
+  font-size: 18px;
+  color: #349eeb;
+}
+.button1{
+  position: absolute;
+  display: inline-block;
+  height: 37px;
+  top: 58%;
+  left: 45%;;
+}
+.button2{
+  position: absolute;
+  display: inline-block;
+  top: 58%;
+  left: 50%;
+  height: 37px
+}
+.button1:hover{
+  background-color: #349eeb;
+}
+.button2:hover{
+  background-color: #349eeb;
+}
+.what-we-do{
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 462px;
+  justify-content: center;
+}
+.what-we-do h2{
+  margin: 10% 0 0 40%;
+  font-size: 22px;
+}
+.what-we-do span{
+  display: block;
+  margin: 2% 0 0 25%;
+}
+.design,.awesome-code,.free-template{
+  width: 32%;
+  min-height: 226px;
+  border: 1px solid #0000;
+  text-align: center;
+  padding-top: 5%;
+  margin: 6% 0 0 1%;
+  border:1px solid #bec2c1;
+  float: left;
+}
+
+.design::before{
+  content: "\f017";
+  font-family: "FontAwesome";
+  font-size: 20px;
+  color: #FFFF;
+  background-color:#349eeb;
+  padding:25px;
+  border-radius: 100%;
+  outline: 5px solid #0000;
+}
+.awesome-code::before{
+  content: "\f0b2";
+  font-family: "FontAwesome";
+  font-size: 20px;
+  color: #FFFF;
+  background-color:#349eeb;
+  padding:25px;
+  border-radius: 100%;
+  outline: 5px solid #0000;
+}
+.free-template::before{
+  content: "\f01c";
+  font-family: "FontAwesome";
+  font-size: 20px;
+  color: #FFFF;
+  background-color:#349eeb;
+  padding:25px;
+  border-radius: 100%;
+  outline: 5px solid #0000;
+}
+.what-we-do-header{
+  margin-top: 20%;
+  color: #778783;
+}
+.what-we-do-small{
+  display: block;
+  margin-top: 10%;
+  color: #778783;
+}
+.services{
+ min-height: 646px;
+ width: 100%;
+ float: left;
+ position: relative;
+ background-color: black;
+ color: #ffff;
+}
+.services h2{
+  margin: 10% 0 0 40%;
+  font-size: 22px;
+}
+.services span{
+  display: block;
+  margin: 2% 0 0 25%;
+}
+.service-1,.service-2{
+  min-height: 467px;
+  width: 46%;
+  float: left;
+  border: 1px solid black;
+  margin: 10% 0 0 2%;
+  text-align: center;
+}
+.service-header{
+  margin-top: 5%;
+  color: #778783;
+}
+.service-small{
+  display: block;
+  margin-top: 5%;
+  color: #778783;
+}
+.learn-more{
+  display: inline-block;
+  margin-top: 5%;
+  padding: 5px;
+
+}
+.tab-section{
+  min-height: 916px;
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+.tab-section h2{
+  margin-top: 10%;
+  font-size: 22px;
+}
+.tab-section span{
+  display: block;
+  margin-top: 2%;
+}
+.tab-button{
+  display: inline-block;
+  padding: 1%;
+  margin-top: 5%;
+}
+.tab-section figure{
+  margin-top: 5%;
+}
+.tab-section-header{
+  margin-top: 2%;
+  color: #778783;
+}
+.tab-section-small1{
+  display: block;
+  color: #778783;
+  margin-top: 2%;
+}
+.tab-section-small2{
+  display: block;
+  color: #778783;
+}
+
+.social{
+  min-height: 236px;
+  width: 100%;
+}
+.social-box{
+  width: 25%;
+  text-align: center;
+  margin: 4%;
+  float: left;
+}
+.social-box h3{
+  margin-top: 10%;
+  color: #444f4c;
+}
+.social-box small{
+  display: block;
+  margin-top: 4%;
+  color: #747480;
+  font-size: small;
+}
+.social-box ul{
+  margin-top: 4%;
+}
+.social-box ul li{
+  width: 100%;
+  height: 30px;
+  font-size: small;
+  border-bottom: 1px solid #747480;
+  color: #747480;
+}
+.twitter::before{
+  content: "\f099";
+  font-family: "FontAwesome";
+  margin-right: 20%;
+  color: black;
+}
+.facebook::before{
+  content: "\f230";
+  font-family: "FontAwesome";
+  margin-right: 20%;
+  color: black;
+}
+.pinterest::before{
+  content: "\f231";
+  font-family: "FontAwesome";
+  margin-right: 20%;
+  color: black;
+}
+.google::before{
+  content: "\f0d5";
+  font-family: "FontAwesome";
+  margin-right: 20%;
+  color: black;
+}
+.webflow::before{
+  content: "\f1ee";
+  font-family: "FontAwesome";
+  margin-right: 20%;
+  color: black;
+}
+.twitter:hover::before{
+  -webkit-transform: scale(1.2);
+  -webkit-transition: transform 0.5 ease-in-out;
+}
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+footer{
+  float: left;
+  width: 100%;
+  min-height: 80px;
+  background-color: black;
+  color:#747480;
+  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h2{
+  position: absolute;
+  top: 35%;
+  left: 0;
+  font-size: 40px;
+  color:#FFFF;
+}
+.banner span{
+  position: absolute;
+  top: 48%;
+  left: 0;
+  font-size: 18px;
+  color: #349eeb;
+}
+.button1{
+  position: absolute;
+  display: inline-block;
+  height: 37px;
+  top: 58%;
+  left: 0;;
+}
+.button2{
+  position: absolute;
+  display: inline-block;
+  top: 58%;
+  left: 20%;
+  height: 37px
+}
+
+
+
+
+
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+header ul{
+  width: 60%;
+}
+.wrapper{
+  width: 80%;
+}
+.design,.awesome-code,.free-template{
+  margin: 1px;
+}
+.banner h2{
+  color: #349eeb;
+}
+
+}  
